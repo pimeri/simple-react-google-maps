@@ -22,6 +22,9 @@ class SimpleGoogleMaps extends Component {
       });
     });
   }
+  shouldComponentUpdate(nextProps) {
+    return true;
+  }
 
   render(){
     if(this.state.mapLoaded){
